@@ -1,6 +1,7 @@
 package com.logica10.www.bariloche;
 
 import android.app.Activity;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -51,9 +52,23 @@ public class Home extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+        switch (position)
+        {
+            case 0:
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                HospedajeFragment fragment = new HospedajeFragment();
+                fragmentTransaction.add(R.id.container, fragment);
+                fragmentTransaction.commit();
+                mTitle = "Hospedaje";
+                break;
+            default:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .commit();
+                break;
+        }
+
+
     }
 
     public void onSectionAttached(int number) {
