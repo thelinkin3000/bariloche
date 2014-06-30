@@ -51,24 +51,34 @@ public class Home extends ActionBarActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
         switch (position)
         {
             case 0:
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                HospedajeFragment fragment = new HospedajeFragment();
-                fragmentTransaction.add(R.id.container, fragment);
-                fragmentTransaction.commit();
+                loadFragment(new HospedajeFragment());
                 mTitle = "Hospedaje";
                 break;
-            default:
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                        .commit();
+            case 1:
+                loadFragment(new GastronomiaFragment());
+                mTitle = "Gastromía";
+                break;
+            case 2:
+                loadFragment(new EntretenimientoFragment());
+                mTitle = "Entretenimiento";
+                break;
+            case 3:
+                loadFragment(new AtraccionesFragment());
+                mTitle = "Atracciones";
                 break;
         }
 
 
+    }
+
+    private void loadFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, fragment);
+        fragmentTransaction.commit();
     }
 
     public void onSectionAttached(int number) {
