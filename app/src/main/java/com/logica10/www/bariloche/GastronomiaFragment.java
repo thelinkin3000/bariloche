@@ -12,6 +12,6 @@ public class GastronomiaFragment extends Fragment{
     public android.view.View onCreateView(LayoutInflater inflater, ViewGroup container,
                                           Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.atracciones_layout, container, false);
+        return inflater.inflate(R.layout.gastronomia_layout, container, false);
     }
 }

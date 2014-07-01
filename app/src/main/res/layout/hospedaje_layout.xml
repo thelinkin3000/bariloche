@@ -2,13 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <Button
         android:layout_width="fill_parent"
-        android:layout_height="42dp"
-        android:textSize="34dp"
-        android:text="Hospedaje"
-        />
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:background="#26c6da"
+        android:text="Hoteles"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:background="#26c6da"
+        android:text="Cabanas"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:background="#26c6da"
+        android:text="Aparts"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:background="#26c6da"
+        android:text="Hostels"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:background="#26c6da"
+        android:text="Campings"
+        android:textColor="#FFFFFF"/>
 
 
 
