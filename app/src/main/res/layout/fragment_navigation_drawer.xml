@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:choiceMode="singleChoice"
-    android:divider="#26c6da"
-    android:dividerHeight="2dp"
+    android:divider="#5677fc"
+    android:dividerHeight="1dp"
     android:background="#FFFFFF"
     tools:context=".NavigationDrawerFragment" />
