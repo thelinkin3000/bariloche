@@ -25,7 +25,7 @@
             android:layout_width="fill_parent"
             android:layout_height="130dp"
 
-            android:src="@drawable/hotels"
+            android:src="@drawable/hoteles"
             android:scaleType="centerCrop"/>
         <TextView
             android:text="Hoteles"
