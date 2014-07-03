@@ -23,8 +23,7 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="130dp"
-
+            android:layout_height="120dp"
             android:src="@drawable/hoteles"
             android:scaleType="centerCrop"/>
         <TextView
@@ -35,8 +34,9 @@
             android:layout_height="20dp"
             android:layout_width="fill_parent"
             android:gravity="right"
-            android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -45,18 +45,25 @@
         android:layout_marginTop="10dip"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:background="#5677fc">
+        android:background="#5677fc"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/cabins"
+            android:scaleType="centerCrop"/>
         <TextView
             android:text="Cabanas"
             android:textColor="#FFFFFF"
             android:textSize="16dip"
             android:fontFamily="sans-serif"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:layout_gravity="bottom"
             android:layout_width="fill_parent"
             android:gravity="right"
-            android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -65,18 +72,25 @@
         android:layout_marginTop="10dip"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:background="#5677fc">
+        android:background="#5677fc"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/aparthotels"
+            android:scaleType="centerCrop"/>
         <TextView
             android:text="Aparts"
             android:textColor="#FFFFFF"
             android:textSize="16dip"
             android:fontFamily="sans-serif"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:layout_gravity="bottom"
             android:layout_width="fill_parent"
             android:gravity="right"
-            android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -85,18 +99,25 @@
         android:layout_marginTop="10dip"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:background="#5677fc">
+        android:background="#5677fc"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/hostel"
+            android:scaleType="centerCrop"/>
         <TextView
             android:text="Hostels"
             android:textColor="#FFFFFF"
             android:textSize="16dip"
             android:fontFamily="sans-serif"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:layout_gravity="bottom"
             android:layout_width="fill_parent"
             android:gravity="right"
-            android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -105,18 +126,25 @@
         android:layout_marginTop="10dip"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
-        android:background="#5677fc">
+        android:background="#5677fc"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/camping"
+            android:scaleType="centerCrop"/>
         <TextView
             android:text="Campings"
             android:textColor="#FFFFFF"
             android:textSize="16dip"
             android:fontFamily="sans-serif"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:layout_gravity="bottom"
             android:layout_width="fill_parent"
             android:gravity="right"
-            android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
         </LinearLayout>
