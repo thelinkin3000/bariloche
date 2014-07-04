@@ -1,6 +1,7 @@
 package com.logica10.www.bariloche;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -17,7 +18,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.HashMap;
 
 
 public class Home extends ActionBarActivity
@@ -169,5 +173,10 @@ public class Home extends ActionBarActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+    public void onClickHoteles(View view){
+        Intent intent = new Intent(this, HotelesActivity.class);
+        startActivity(intent);
+    }
+
 
 }

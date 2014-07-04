@@ -20,7 +20,8 @@
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:background="#5677fc"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:onClick="onClickHoteles">
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="120dp"

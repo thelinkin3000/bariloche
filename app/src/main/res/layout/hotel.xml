@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#5677fc"
+    android:layout_marginTop="10dp"
+    >
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/hoteles"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Hotel Barilo"
+        android:textColor="#FFFFFF"
+        android:textSize="24dip"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="5 estrellas"
+        android:textColor="#FFFFFF"
+        android:textSize="16dip"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/tel"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:text="+543624558869"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"/>
+        </LinearLayout>
+
+
+</LinearLayout>
