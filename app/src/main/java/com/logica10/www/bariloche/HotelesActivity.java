@@ -18,12 +18,12 @@ public class HotelesActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hoteles_cat_layout);
-        showPopUp();
+        setLista();
 
     }
 
 
-    public void showPopUp(){
+    public void setLista(){
 
         // add your items, this can be done programatically
         // your items can be from a database

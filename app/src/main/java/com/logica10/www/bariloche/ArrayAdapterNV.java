@@ -1,29 +1,27 @@
 package com.logica10.www.bariloche;
 
-/**
- * Created by Carlos on 04/07/2014.
- *
- */
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.logica10.www.bariloche.HotelItem;
 
 import java.util.HashMap;
-import java.util.Map;
 
-public class ArrayAdapterHoteles extends ArrayAdapter<HotelItem> {
+/**
+ * Created by Carlos on 12/07/2014.
+ */
+public class ArrayAdapterNV extends ArrayAdapter<NvItem>{
     Context mContext;
     int layoutResourceId;
-    HotelItem data[] = null;
-    HashMap<String,Integer> map;
+    NvItem data[] = null;
+    HashMap<Integer,Integer> map;
 
-    public ArrayAdapterHoteles(Context mContext, int layoutResourceId, HotelItem[] data, HashMap<String,Integer> map) {
+    public ArrayAdapterNV(Context mContext, int layoutResourceId, NvItem[] data, HashMap<Integer,Integer> map) {
 
         super(mContext, layoutResourceId, data);
 
@@ -49,17 +47,13 @@ public class ArrayAdapterHoteles extends ArrayAdapter<HotelItem> {
         }
 
         // object item based on the position
-        HotelItem item = data[position];
+        NvItem item = data[position];
 
         // Asigna toda la faena de los valores, una garcha
-        TextView titulo = (TextView) convertView.findViewById(R.id.titulo);
-        ImageView foto = (ImageView) convertView.findViewById(R.id.foto);
-        TextView tel = (TextView) convertView.findViewById(R.id.tel);
-        titulo.setText(item.titulo);
-        tel.setText(item.tel);
-        if (item.foto != "") {
-            foto.setImageResource(map.get(item.foto));
-        }
+        TextView title = (TextView) convertView.findViewById(R.id.nvtitle);
+        ImageView icon = (ImageView) convertView.findViewById(R.id.icon);
+        title.setText(item.titulo);
+        //TODO: POR QUÉ CARAJO ME TIRA ERROR ESTO icon.setImageResource(item.icon);
 
         return convertView;
 

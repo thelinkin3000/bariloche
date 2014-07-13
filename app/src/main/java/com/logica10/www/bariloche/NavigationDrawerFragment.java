@@ -22,6 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
@@ -97,16 +99,21 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActionBar().getThemedContext(),
+        NvItem items[] = new NvItem[]{
+                new NvItem(R.drawable.nv_alojamiento,getString(R.string.title_section1)),
+                new NvItem(R.drawable.nv_gastronomia,getString(R.string.title_section2)),
+                new NvItem(R.drawable.nv_entretenimiento,getString(R.string.title_section3)),
+                new NvItem(R.drawable.nv_excursiones,getString(R.string.title_section4))
+        };
+        HashMap<Integer,Integer> mapa = new HashMap<Integer, Integer>();
+
+        ArrayAdapterNV adapternv = new ArrayAdapterNV(
+                getActivity(),
                 R.layout.navdraweritem_layout,
-                android.R.id.text1,
-                new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
-                        getString(R.string.title_section4)
-                }));
+                items,
+                mapa
+        );
+        mDrawerListView.setAdapter(adapternv);
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
     }
